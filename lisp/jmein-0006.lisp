@@ -1,0 +1,8 @@
+(defun sumsquare (n)
+  (let ((sum 0))
+    (loop for i from 1 to n do (setf sum (+ sum (* i i))))
+    sum))
+(defun squaresum (n)
+  (let ((sum 0))
+    (loop for i from 1 to n do (setf sum (+ sum i)))
+    (* sum sum)))
