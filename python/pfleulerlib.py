@@ -1,6 +1,5 @@
 #!/usr/bin/python
 import math
-import primes
 
 def factor(n):
     x = n
@@ -35,3 +34,21 @@ def sieve_of_erastosthenes():
                 primes.setdefault(p + prime, []).append(p)
             del(primes[prime])
         prime += 1
+
+def product(l):
+    prod = 1
+    if type(l) == list:
+        for x in l:
+            prod *= x
+    return prod
+
+# From http://pthree.org/2007/09/15/largest-palindromic-number-in-python/
+def is_palin(string):
+    """Returns true if a string is a palindrome"""
+    start, end = 0, len(string) - 1
+    while end > start:
+        if string[start] != string[end]:
+            return False
+        start += 1
+        end -= 1
+    return True
