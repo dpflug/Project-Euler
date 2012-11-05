@@ -1,0 +1,5 @@
+(defun even-fib (n)
+  (do ((sum 0 (+ sum fib))
+       (fib 2 (+ (* 3 fib) (* 2 fib-1)))
+       (fib-1 1 (+ (* 2 fib) fib-1)))
+    ((> fib n) sum)))

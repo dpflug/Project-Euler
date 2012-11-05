@@ -1,0 +1,5 @@
+(defun maxfact (n)
+  (let ((max 1))
+  (do* ((i 2 (if (= 0 (mod n i)) i (+ i 1))))
+    ((= 1 n) max)
+    (when (= 0 (mod n i)) (setf n (/ n i)) (setf max i)))))
