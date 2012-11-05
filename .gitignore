@@ -1,0 +1,12 @@
+# If this ignores something you want, add it by hand.
+
+# Python poop
+*.pyc
+*.wsgi
+
+# vim vestiges
+*~
+*.swp
+*.swo
+*.swn
+*.swm
