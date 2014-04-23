@@ -1,6 +1,7 @@
 # If this ignores something you want, add it by hand.
 
-# Python poop
+# compiler crap
+*.db
 *.pyc
 *.wsgi
 
@@ -10,3 +11,6 @@
 *.swo
 *.swn
 *.swm
+
+# emacs excess
+\#*\#
