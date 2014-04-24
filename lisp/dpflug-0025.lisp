@@ -15,7 +15,7 @@
 
 (defun problem-25 (&optional (x 1))
   "Find the first fibonacci number with 1000 digits."
-  (let ((ans-len (length (write-to-string (fib-memo x)))))
+  (let ((ans-len (ceiling (log (fib-memo x) 10))))
 	(if (>= ans-len 1000)
 		x
 		(problem-25 (1+ x)))))
